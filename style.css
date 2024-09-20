@@ -1,0 +1,88 @@
+body {
+  overflow: hidden;
+  user-select: none;
+}
+
+#menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 1px solid black;
+  padding: 20px;
+  width: 40px;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+button {
+  background: none;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+}
+button:hover {
+  transition: 0.3s ease;
+  opacity: 0.7;
+}
+button:focus {
+  outline: none;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10vh;
+  z-index: 9;
+  background-color: rgb(220, 222, 224);
+  border-radius: 15px;
+  width: 220px;
+  height: 250px;
+  padding: 15px;
+}
+
+.color-picker {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.red,
+.black,
+.blue,
+.green {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+
+.close {
+  position: absolute;
+  left: 190px;
+  background-color: rgb(220, 222, 224);
+  border: none;
+}
+
+#slider {
+  position: absolute;
+  left: 10px;
+  top: 70px;
+}
